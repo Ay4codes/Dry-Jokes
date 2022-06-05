@@ -1,4 +1,7 @@
+// Getting joke on Website load
 getjoke();
+
+// Background Animation
 var canvas = document.querySelector('canvas');
 
 canvas.width = window.innerWidth;

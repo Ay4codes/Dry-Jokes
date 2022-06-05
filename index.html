@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Short description of the document (limit to 150 characters) -->
+	<!-- Primary Meta Tags -->
+	<meta name="title" content="Dry Jokes 😶 - @ay4codes">
+	<meta name="description" content="Are you're bored? Check out this dry jokes 😂">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:title" content="Dry Jokes 😶 - @ay4codes">
+	<meta property="og:description" content="Are you're bored? Check out this dry jokes 😂">
+	<meta property="twitter:image" content="">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://ayishola.github.io/Dryjokes/">
+	<meta property="twitter:title" content="Dry Jokes 😶 - @eni4sure">
+	<meta property="twitter:description" content="Are you're bored? Check out this dry jokes 😂">
+	<meta property="twitter:image" content="">
+
+    <title>Dryjokes😂 - @ay4sure</title>
+    <script src="https://kit.fontawesome.com/c2233179c9.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="./logo.jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Nuosu+SIL&display=swap" rel="stylesheet"> 
+    <style>
+        body {
+            overflow: hidden;
+        }
+        .quote-container {
+            top: 20vh;
+            left: 0;
+            position: absolute;
+            background-color: #E74C3C;
+            border-radius: 20px;
+            padding: 15px;
+            width: 600px;
+            right: 0;
+            margin-inline: auto;
+            
+        }
+        .quote {
+            padding: 20px 30px 15px 30px;
+            background-color: #fff;
+            border-radius: 20px;
+        }
+        .quote h1 {
+            text-align: center;
+            font-family: 'Alfa Slab One', cursive;
+            color: #2C3E50;
+            font-size: 40px;
+        }
+        .quote h3 {
+            margin-bottom: 0px;
+            text-align: center;
+            font-family: 'Bebas Neue', cursive;
+            color: #2C3E50;
+        }
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        canvas {
+            width: 100%;
+        }
+        .main-quote-cont p{
+            width: 95%;
+            margin-inline: auto;
+            text-align: center;
+            font-family: 'Alfa Slab One', cursive;
+            font-size: 30px;
+        }
+        #main-quote {
+            font-family: 'Nuosu SIL', serif;
+            color: #2C3E50;
+            font-size: 22px;
+        }
+        .links {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        #listen {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            border: none;
+            background-color: #E74C3C;
+            color: #fff;
+            font-size: 17px;
+            cursor: pointer;
+            transition: 0.5s;
+            text-align: center;
+            box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+        }
+        #listen:hover {            
+            transform: translate(0,-15px);
+            background-color: #2C3E50;
+        }
+        #twitter {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            border: none;
+            background-color: #E74C3C;
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+            transition: 0.5s;
+            text-align: center;
+            box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+        }
+        #twitter:hover {
+            transform: translate(0,-15px);
+            background-color: #00acee;
+            color: #fff;
+        }
+        #whatsapp {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            border: none;
+            background-color: #E74C3C;
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+            transition: 0.5s;
+            text-align: center;
+            justify-content: center;
+            box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+        }
+        #whatsapp:hover {
+            transform: translate(0,-15px);
+            background-color: #25D366;
+            color: #fff;
+        }
+        .links-cont {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .gen {
+            padding: 10px 20px;
+            background-color: #E74C3C;
+            border-radius: 30px;
+            color: #fff;
+            cursor: pointer;
+            font-family: 'Anonymous Pro', monospace;
+        }
+        .gen:hover {
+            background-color: ;
+        }
+        .main-quote-cont {
+            margin-block: 30px;
+        }
+        .stats {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #2C3E50;
+            font-family: 'Alfa Slab One', cursive;
+            border-top: 1px solid #2C3E50;
+            padding-block: 10px;
+            border-bottom: 1px solid #2C3E50;
+        }
+        .follow {
+            position: absolute;
+            top: 40px;
+            right: -60px;
+            transform: rotate(45deg);
+        }
+        .drop-down {
+            padding-block: 4px;
+            background-color: #E74C3C;
+        }
+        .dash-bord {
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            border-style: dashed;
+            padding-block: 2px;
+        }
+        .dash-bord a {
+            text-decoration: none;
+            color: #fff;
+            text-align: right;
+            padding-inline: 50px;
+        }
+        @media (max-width: 1200px) {
+        .quote-container {
+            top: 20vh;
+            left: 0;
+            right: 0;
+            margin-inline: auto;
+        }
+        }
+        @media (max-width: 992px) {
+        .quote-container {
+            top: 15vh;
+            left: 0;
+            right: 0;
+            margin-inline: auto;
+        }
+        }
+        @media (max-width: 768px) {
+        .quote-container {
+            top: 25vh;
+            left: 0vw;
+            width: 500px;
+            right: 0;
+            margin-inline: auto;
+        }
+        .quote h1 {
+            font-size: 28px;
+        }
+        }
+        @media (max-width: 650px) {
+        .quote-container {
+            top: 20vh;
+            left: 0;
+            width: 400px;
+            right: 0;
+            margin-inline: auto;
+        }
+        .quote h1 {
+            font-size: 28px;
+        }
+        }
+        @media (max-width: 570px) {
+        .quote-container {
+            top: 20vh;
+            left: 0;
+            width: 400px;
+            right: 0;
+            margin-inline: auto;
+        }
+        .quote h1 {
+            font-size: 28px;
+        }
+    }
+        @media (max-width: 470px) {
+        .quote-container {
+            top: 20vh;
+            left: 0;
+            width: 350px;
+            right: 0;
+            margin-inline: auto;
+        }
+        .quote h1 {
+            font-size: 20px;
+        }
+        .gen {
+            padding: 10px 15px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <canvas></canvas>
+    <div class="quote-container">
+        <div class="quote">
+            <h1>Dry Joke Of The Day</h1>
+            <h3>Dry Joke <span id="count">1</span></h3>
+            
+            <div class="main-quote-cont">
+                <p>"<span id="main-quote"></span>"</p>
+            </div>
+            <div class="links-cont">
+                <div class="links">
+                    <button id="listen"><i class="fa-solid fa-volume-high"></i></i></button>
+                    <a class="Tweet" href="https://twitter.com/intent/tweet?text=Are you bored during this lockdown? 'se you wan laugh scatta'? Check out this dry jokes 😂, check it out @ https://eni4sure.github.io/dryjokes/">
+                    <button id="twitter"><i class="fa-brands fa-twitter"></i></button>
+                    </a>
+                    <a href="https://wa.me/?text=Are you bored during this lockdown? 'se you wan laugh scatta'? Check out this dry jokes 😂, check it out @ https://eni4sure.github.io/dryjokes/"><button id="whatsapp"><i class="fa-brands fa-whatsapp"></i></button></a>
+                </div>
+                <div class="gen" id="gen">
+                    New Quote
+                </div>
+            </div>
+            <div class="stats">
+                <p>This page has been viewed <span id="stats"></span> times</p>
+            </div>
+        </div>
+    </div>
+    <div class="follow">
+        <div class="drop-down" id="drop-down">
+            <div class="dash-bord">
+                <a href="https://github.com/AyIshola">Follow me on Github</a>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

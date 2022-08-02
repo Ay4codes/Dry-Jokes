@@ -1,6 +1,6 @@
 # DryJokes
 
-A simple app to display dry jokes 😶 with a background animation build with Three.js
+A simple app to display dry jokes 😶 with a background animation build with Three.js canvas
 
 ## Demo
 
